@@ -5,7 +5,9 @@ st.set_page_config(page_title="Cgma Compiler", layout="wide")
 st.title("Cgma Compiler")
 st.write("Lexical Analyzer")
 
-userInput = [""""""]
+test = ["""helloo
+        worlddd
+        aaaa"""]
 
 col1, col2 = st.columns(2)
 with col1:
@@ -15,7 +17,7 @@ with col1:
 
 with col2:
     with st.container(border=True):
-        testimport.writeLexicalAnalysis(userInput)
+        testimport.writeLexicalAnalysis(test)
 
 with st.container(border=True):
     st.write("Terminal")
