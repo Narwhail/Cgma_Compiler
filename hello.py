@@ -12,7 +12,7 @@ test = ["""helloo
 col1, col2 = st.columns(2)
 with col1:
     with st.container(border=True):
-        userInput = st.text_area(value="hello")
+        userInput = st.text_area(label="lexicalAnalyzer",value="hello")
         st.button("Run Lexical Analyzer")
 
 with col2:
