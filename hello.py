@@ -11,12 +11,12 @@ test = ["""helloo
 
 col1, col2 = st.columns(2)
 with col1:
-    with st.container(border=True):
+    with st.container(height=100, border=True):
         userInput = st.text_area(label="lexicalAnalyzer", placeholder="Enter code...")
         st.button("Run Lexical Analyzer")
 
 with col2:
-    with st.container(border=True):
+    with st.container(height=100, border=True):
         testimport.writeLexicalAnalysis(userInput)
 
 with st.container(border=True):
