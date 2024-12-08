@@ -1,4 +1,2 @@
-import streamlit as st 
-
 def writeTerminal():
-    st.write("AMOGUS")
+    st.write("Code")
