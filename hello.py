@@ -8,7 +8,7 @@ st.write("Lexical Analyzer")
 col1, col2 = st.columns(2)
 with col1:
     with st.container(border=True):
-        st.write("Code")
+        userInput = st.text_input("Enter code")
         st.button("Run Lexical Analyzer")
 
 with col2:
