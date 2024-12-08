@@ -9,7 +9,7 @@ column_height = 400
 col1, col2 = st.columns(2)
 with col1:
     with st.container(height=column_height, border=True):
-        textAreaInput = st.text_area(height=column_height-120, label="lexicalAnalyzer", placeholder="Enter code...")
+        textAreaInput = st.text_area(height=column_height-120, label="Code", placeholder="Enter code...")
         lines = textAreaInput.splitlines()
         st.button("Run Lexical Analyzer")
 
@@ -18,5 +18,5 @@ with col2:
         testimport.writeLexicalAnalysis(lines)
 
 with st.container(border=True):
-    st.write("Terminal")
+    st.write("Syntax Analyzer")
     #st.write("Terminal")
