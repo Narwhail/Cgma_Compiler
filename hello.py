@@ -7,9 +7,12 @@ st.write("Lexical Analyzer")
 col1, col2 = st.columns(2)
 with col1:
     with st.container(border=True):
-        st.write("Test Lexeme and token")
+        st.write("Code")
         st.button("Run Lexical Analyzer")
 
 with col2:
     with st.container(border=True):
         st.write("Test Lexeme and token")
+
+with st.container(border=True):
+    st.write("Terminal")
