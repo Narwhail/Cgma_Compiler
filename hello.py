@@ -1,4 +1,5 @@
 import streamlit as st
+import testimport
 
 st.set_page_config(page_title="Cgma Compiler", layout="wide")
 st.title("Cgma Compiler")
@@ -15,4 +16,5 @@ with col2:
         st.write("Test Lexeme and token")
 
 with st.container(border=True):
-    st.write("Terminal")
+    testimport.writeTerminal()
+    #st.write("Terminal")
