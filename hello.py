@@ -8,13 +8,13 @@ st.write("Lexical Analyzer")
 col1, col2 = st.columns(2)
 with col1:
     with st.container(border=True):
-        userInput = st.text_area("Enter code")
+        userInput = st.text_area(placeholder="Enter code...")
         st.button("Run Lexical Analyzer")
 
 with col2:
     with st.container(border=True):
-        st.write("Test Lexeme and token")
+        testimport.writeLexicalAnalysis(userInput)
 
 with st.container(border=True):
-    testimport.writeTerminal()
+    st.write("Terminal")
     #st.write("Terminal")

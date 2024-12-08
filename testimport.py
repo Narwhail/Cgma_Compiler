@@ -1,4 +1,5 @@
 import streamlit as st # type: ignore
 
-def writeTerminal():
-    st.write("Code")
+def writeLexicalAnalysis(userInput):
+    for x in userInput:
+        st.write(x)
