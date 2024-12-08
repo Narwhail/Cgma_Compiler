@@ -1,5 +1,5 @@
 import streamlit as st # type: ignore
 
-def writeLexicalAnalysis(userInput):
-    for x in userInput:
+def writeLexicalAnalysis(tttext):
+    for x in tttext:
         st.write(x)

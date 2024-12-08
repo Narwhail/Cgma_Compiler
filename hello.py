@@ -5,6 +5,8 @@ st.set_page_config(page_title="Cgma Compiler", layout="wide")
 st.title("Cgma Compiler")
 st.write("Lexical Analyzer")
 
+userInput = [""""""]
+
 col1, col2 = st.columns(2)
 with col1:
     with st.container(border=True):
