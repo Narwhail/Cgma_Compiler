@@ -1,5 +1,4 @@
 import streamlit as st # type: ignore
-import testimport
 import lexer
 
 st.set_page_config(page_title="Cgma Compiler", layout="wide")
