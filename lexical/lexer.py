@@ -23,20 +23,3 @@ def analyzeLexical(textInput):
             tokens.append((temp_str, "Identifier", line_num, column_num - len(temp_str)))
     
     return tokens
-
-
-    # for line_num, line in enumerate(lines, 1):
-    #     column_num = 1
-    #     temp_str = ""
-    #     for char in line:
-    #         if char.isspace():
-    #             if temp_str:
-    #                 tokens.append((temp_str, "Identifier", line_num, column_num))
-    #                 column_num -= len(temp_str) + 1
-    #                 temp_str = ""
-    #         else:
-    #             temp_str += char
-    #             column_num += 1
-    #     if temp_str:
-    #         tokens.append((temp_str, "Identifier", line_num, column_num))  # Adjust token type as needed
-    return tokens
