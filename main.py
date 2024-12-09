@@ -1,6 +1,7 @@
 import streamlit as st # type: ignore
 import lexical.lexer as lexer
 
+
 st.set_page_config(page_title="Cgma Compiler", layout="wide")
 st.title("Cgma Compiler")
 st.write("A lexical analyzer and syntax analyzer for a new programming language based on C. In compliance for the Automata Theory & Formal Languages.")

@@ -195,6 +195,14 @@ def checkToken(currentWord):
         if currentWord[1] == 'a' and len(currentWord)>=3:
             if currentWord[2] == 'p' and len(currentWord)==3:
                 return "RESERVED_WORD"
+            
+    # IDENTIFIERS
+    if len(currentWord)<15:
+        if currentWord[0].isalpha():
+            for char in currentWord:
+                if char.isalnum():
+                    return "IDENTIFIER"
+                
+    
 
-    else:
-        return "Unknown token"
+    return "UNKNOWN_TOKEN"
