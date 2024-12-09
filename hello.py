@@ -46,4 +46,4 @@ with col2:
             st.write(f"Line {line}, Column {column}. Lexeme **{lexeme}** has a token of **{token}**.")
 
 with st.container(border=True):
-# st.write("Code has no error!")
+    # st.write("Code has no error!")
