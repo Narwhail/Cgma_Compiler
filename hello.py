@@ -4,7 +4,7 @@ import lexer
 
 st.set_page_config(page_title="Cgma Compiler", layout="wide")
 st.title("Cgma Compiler")
-st.write("Lexical Analyzer")
+#st.write("Lexical Analyzer")
 
 column_height = 400
 col1, col2 = st.columns(2)
