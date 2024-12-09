@@ -8,8 +8,8 @@ st.write("A lexical analyzer and syntax analyzer for a new programming language 
 column_height = 400
 col1, col2 = st.columns(2)
 with col1:
-    st.subheader("Code")
     with st.container(height=column_height, border=True):
+        st.subheader("Code")
         textAreaInput = st.text_area(height=column_height-120, label="", placeholder="Enter code...")
 
 with col2:
