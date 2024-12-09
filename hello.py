@@ -1,5 +1,6 @@
 import streamlit as st # type: ignore
 import testimport
+import lexer
 
 st.set_page_config(page_title="Cgma Compiler", layout="wide")
 st.title("Cgma Compiler")
@@ -10,12 +11,11 @@ col1, col2 = st.columns(2)
 with col1:
     with st.container(height=column_height, border=True):
         textAreaInput = st.text_area(height=column_height-120, label="Code", placeholder="Enter code...")
-        lines = textAreaInput.splitlines()
         st.button("Run Lexical Analyzer")
 
 with col2:
     with st.container(height=column_height, border=True):
-        testimport.writeLexicalAnalysis(lines)
+        lexicalOutput = lexer.analyzeLexical(textAreaInput)
 
 with st.container(border=True):
     st.write("Syntax Analyzer")
