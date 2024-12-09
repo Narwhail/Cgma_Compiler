@@ -93,6 +93,53 @@ def checkToken(currentWord):
             if currentWord[2] == 'g' and len(currentWord)==3:
                 return "RESERVED_WORD"
 
+    # Letter H
+    if currentWord[0] == 'h':
+        if currentWord[1] == 'a':
+            if currentWord[2] == 'w':
+                if currentWord[3] == 'k' and len(currentWord)==4:
+                    return "RESERVED_WORD"                                  # HAWK TUAH (?)
+
+    # Letter I
+    if currentWord[0] == 'i':
+        if currentWord[1] == 'n':
+            if currentWord[2] == 's':
+                if currentWord[3] == 'e':
+                    if currentWord[4] == 'r':
+                        if currentWord[5] == 't' and len(currentWord)==6:
+                            return "RESERVED_WORD"
+    
+    # Letter J
+    if currentWord[0] == 'j':
+        if currentWord[1] == 'i':
+            if currentWord[2] == 't' and len(currentWord) == 3:
+                return "RESERVED_WORD"
+
+    # Letter L
+    if currentWord[0] == 'l':
+        if currentWord[1] == 'e':
+            if currentWord[2] == 't':
+                if currentWord[3] == 'h':
+                    if currentWord[4] == 'i':
+                        if currentWord[5] == 'm':
+                            if currentWord[6] == 'c':
+                                if currentWord[7] == 'o':
+                                    if currentWord[8] == 'o':
+                                        if currentWord[9] == 'k' and len(currentWord) == 10:
+                                            return "RESERVED_WORD"              
+        elif currentWord[1] == 'w':
+            if currentWord[2] == 'k' and len(currentWord)==3:
+                return "RESERVED_WORD"
+
+    # Letter N
+    # Letter P
+    # Letter R
+    # Letter S
+    # Letter T
+    # Letter Y
+
+
+
 
     else:
         return "Unknown token"
