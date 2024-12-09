@@ -13,3 +13,4 @@ def analyzeLexical(textInput):
                 temp_str += char
     
     tokens.append(temp_str)
+    return tokens
