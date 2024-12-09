@@ -1,5 +1,5 @@
 import streamlit as st # type: ignore
-import lexer
+import pythu.lexical.lexer as lexer
 
 st.set_page_config(page_title="Cgma Compiler", layout="wide")
 st.title("Cgma Compiler")
