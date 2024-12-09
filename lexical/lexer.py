@@ -23,7 +23,7 @@ def analyzeLexical(textInput):
         if temp_str:
             token_type = checkToken(temp_str)
             tokens.append((temp_str, token_type, line_num, column_num - len(temp_str)))
-
+    
     return tokens
 
 
@@ -81,5 +81,18 @@ def checkToken(currentWord):
                         if currentWord[5] == 'n' and len(currentWord) == 6:
                             return "RESERVED_WORD"
     
+    # Letter G
+    if currentWord[0] == 'g':
+        if currentWord[1] == 'e':
+            if currentWord[2] == 't':
+                if currentWord[3] == 'o':
+                    if currentWord[4] == 'u':
+                        if currentWord[5] == 't' and len(currentWord)==6:
+                            return "RESERVED_WORD"
+        elif currentWord[1] == 'n':
+            if currentWord[2] == 'g' and len(currentWord)==3:
+                return "RESERVED_WORD"
+
+
     else:
         return "Unknown token"
