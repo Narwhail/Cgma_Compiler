@@ -12,5 +12,5 @@ def analyzeLexical(textInput):
             else:
                 temp_str += char
     
-    tokens.append(temp_str)
-    return tokens
+        tokens.append(temp_str)
+        return tokens
