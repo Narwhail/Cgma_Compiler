@@ -151,7 +151,7 @@ def checkToken(currentWord):
                         return "RESERVED_WORD"
         elif currentWord[1] == 'l':
             if currentWord[2] == 'u':
-                if currentWord[3] == 'g' and len(currentWord)==5:
+                if currentWord[3] == 'g' and len(currentWord)==4:
                     return "RESERVED_WORD"
                 
     # Letter R
@@ -184,11 +184,11 @@ def checkToken(currentWord):
     if currentWord[0] == 't':
         if currentWord[1] == 'u':
             if currentWord[2] == 'a':
-                if currentWord[3] == 'h' and len(currentWord)==3:
+                if currentWord[3] == 'h' and len(currentWord)==4:
                     return "RESERVED_WORD"
         elif currentWord[1] == 'r':
             if currentWord[2] == 'u':
-                if currentWord[3] == 'e' and len(currentWord)==3:
+                if currentWord[3] == 'e' and len(currentWord)==4:
                     return "RESERVED_WORD"
 
     # Letter Y
