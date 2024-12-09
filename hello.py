@@ -20,8 +20,8 @@ with col2:
         xoxo = textAreaInput.splitlines()
         yoyo = lexer.analyzeLexical(xoxo)
 
-        for lexeme, token, line, column in yoyo:
-            st.write(f"Line {line}, Column {column}. Lexeme **{lexeme}** has a token of **{token}**.")
+        # for lexeme, token, line, column in yoyo:
+        #     st.write(f"Line {line}, Column {column}. Lexeme **{lexeme}** has a token of **{token}**.")
 
 with st.container(border=True):
     st.write("Code has no error!")
