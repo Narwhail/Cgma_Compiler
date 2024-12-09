@@ -20,10 +20,11 @@ with col2:
         # array tuple format: lexeme(string), token(string), line(int), column(line)
         # textExample = [("chungus", "data_type", 0, 0),("x", "identifier", 0, 8),("=", "assign_op", 0, 9),("10", "int_literal", 0, 10),("hello", "string", 1, 0),("chungus", "data_type", 0, 0),("x", "identifier", 0, 8),("=", "assign_op", 0, 9),("10", "int_literal", 0, 10),("hello", "string", 1, 0)]
 
-        result, error = lexer.run("<file>",textAreaInput)
+        split = textAreaInput.splitlines()
+        for i in split:
+            result, error = lexer.run("<value>", i)
 
-
-        st.write(result)
+            st.write(result)
 
 with st.container(border=True):
     st.subheader("Syntax Analyzer")
