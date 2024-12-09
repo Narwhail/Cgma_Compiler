@@ -1,3 +1,5 @@
+import streamlit as st # type: ignore
+
 def analyzeLexical(textInput):
     lines = textInput.splitlines()  # Split input into lines
     tokens = []
