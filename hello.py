@@ -15,7 +15,7 @@ with col1:
 with col2:
     with st.container(height=column_height, border=True):
         st.write("Lexical Analyzer")
-        lexicalOutput = [lexer.analyzeLexical(textAreaInput)]
+        lexicalOutput = lexer.analyzeLexical(textAreaInput)
         for line in lexicalOutput:
             st.write(line)
 
