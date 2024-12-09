@@ -132,11 +132,70 @@ def checkToken(currentWord):
                 return "RESERVED_WORD"
 
     # Letter N
+    if currentWord[0] == 'n':
+        if currentWord[1] == 'o':
+            if currentWord[2] == 'c':
+                if currentWord[3] == 'a':
+                    if currentWord[4] == 'p' and len(currentWord)==5:
+                        return "RESERVED_WORD"
+        if currentWord[1] == 'p':
+            if currentWord[2] == 'c' and len(currentWord)==3:
+                return "RESERVED_WORD"
+
     # Letter P
+    if currentWord[0] == 'p':
+        if currentWord[1] == 'a':
+            if currentWord[2] == 'u':
+                if currentWord[3] == 's':
+                    if currentWord[4] == 'e' and len(currentWord)==5:
+                        return "RESERVED_WORD"
+        elif currentWord[1] == 'l':
+            if currentWord[2] == 'u':
+                if currentWord[3] == 'g' and len(currentWord)==5:
+                    return "RESERVED_WORD"
+                
     # Letter R
+    if currentWord[0] == 'r':
+        if currentWord[1] == 'e':
+            if currentWord[2] == 'm':
+                if currentWord[3] == 'o':
+                    if currentWord[4] == 'v':
+                        if currentWord[5] == 'e' and len(currentWord)==6:
+                            return "RESERVED_WORD"
+
     # Letter S
+    if currentWord[0] == 's':
+        if currentWord[1] == 'k':
+            if currentWord[2] == 'i':
+                if currentWord[3] == 'b':
+                    if currentWord[4] == 'i':
+                        if currentWord[5] == 'd':
+                            if currentWord[6] == 'i' and len(currentWord)==7:
+                                return "RESERVED_WORD"
+        elif currentWord[1] == 't':
+            if currentWord[2] == 'u':
+                if currentWord[3] == 'r':
+                    if currentWord[4] == 'd':
+                        if currentWord[5] == 'y' and len(currentWord)==6:
+                            return "RESERVED_WORD"
+
+
     # Letter T
+    if currentWord[0] == 't':
+        if currentWord[1] == 'u':
+            if currentWord[2] == 'a':
+                if currentWord[3] == 'h' and len(currentWord)==3:
+                    return "RESERVED_WORD"
+        elif currentWord[1] == 'r':
+            if currentWord[2] == 'u':
+                if currentWord[3] == 'e' and len(currentWord)==3:
+                    return "RESERVED_WORD"
+
     # Letter Y
+    if currentWord[0] == 'y':
+        if currentWord[1] == 'a':
+            if currentWord[2] == 'p' and len(currentWord)==3:
+                return "RESERVED_WORD"
 
 
 
