@@ -16,10 +16,10 @@ with col2:
         st.write("Lexical Analyzer")
         # array tuple format: lexeme(string), token(string), line(int), column(line)
         # textExample = [("chungus", "data_type", 0, 0),("x", "identifier", 0, 8),("=", "assign_op", 0, 9),("10", "int_literal", 0, 10),("hello", "string", 1, 0),("chungus", "data_type", 0, 0),("x", "identifier", 0, 8),("=", "assign_op", 0, 9),("10", "int_literal", 0, 10),("hello", "string", 1, 0)]
-        text = "chungus skibidi"
-        yoyo = lexer.analyzeLexical(text)
 
-        for lexeme, token, line, column in yoyo:
+        xoxo = textAreaInput.splitlines()
+
+        for lexeme, token, line, column in xoxo:
             st.write(f"Line {line}, Column {column}. Lexeme **{lexeme}** has a token of **{token}**.")
 
 with st.container(border=True):
